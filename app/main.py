@@ -1,6 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.routers.classify_router import (
+    router as classify_router
+)
+
+from app.routers.burnout_router import (
+    router as burnout_router
+)
+
 app = FastAPI()
 
 app.add_middleware(
@@ -10,6 +18,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(classify_router)
+app.include_router(burnout_router)
 
 @app.get("/")
 async def root():
