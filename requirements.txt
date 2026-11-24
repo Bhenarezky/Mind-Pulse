@@ -6,3 +6,5 @@ numpy
 scikit-learn
 nltk
 deep-translator
+python-dotenv
+google-genai
