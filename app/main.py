@@ -10,7 +10,7 @@ from app.routers.burnout_router import (
     router as burnout_router
 )
 
-load_dotaenv()
+load_dotenv()
 
 app = FastAPI()
 
