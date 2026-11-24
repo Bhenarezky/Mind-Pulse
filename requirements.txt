@@ -5,6 +5,8 @@ tensorflow
 numpy
 scikit-learn
 nltk
-deep-translator
+# deep-translator
+requests
+langdetect
 python-dotenv
 google-genai
