@@ -1,4 +1,4 @@
-from dotenv import load_env 
+from dotenv import load_dotenv 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -10,7 +10,7 @@ from app.routers.burnout_router import (
     router as burnout_router
 )
 
-load_env()
+load_dotenv()
 
 app = FastAPI()
 
