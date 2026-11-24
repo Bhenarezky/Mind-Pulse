@@ -1,3 +1,4 @@
+from dotenv import load_env 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -8,6 +9,8 @@ from app.routers.classify_router import (
 from app.routers.burnout_router import (
     router as burnout_router
 )
+
+load_env()
 
 app = FastAPI()
 
